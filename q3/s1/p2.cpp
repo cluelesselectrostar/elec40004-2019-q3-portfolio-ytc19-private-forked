@@ -14,10 +14,10 @@ int main()
     for(int i=0; i<12; i++){
         for(int j=0; j<30; j++){
             int ij = i*j;
-            D_update(&c, int(sin(ij)*131));
+            c.update(int(sin(ij)*131));
         }
 
-        D_stats(&c);
+        c.stats();
 
         int accumulator=c.accumulator;
         c.n=0;

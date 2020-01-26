@@ -3,19 +3,21 @@
 
 int main()
 {
-    D *c1 = D_create("M1");
-    D *c2 = D_create("M2");
+    D *c1 = new D;
+    c1->name = "M1";
+    D *c2 = new D;
+    c2->name = "M2";
 
     for(int i=0; i<12; i++){
-        D_update(c1,int(cos(i)*133));
+        c1->update(int(cos(i)*133));
         if(i % 2){
-            D_update(c2,int(cos(i)*133));
+            c2->update(int(cos(i)*133));
         }
     }
 
-    D_stats(c1);
-    D_stats(c2);
+    c1->stats();
+    c2->stats();
 
-    D_destroy(c1);
-    D_destroy(c2);
+    delete c1;
+    delete c2;
 }

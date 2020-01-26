@@ -8,4 +8,6 @@ diff p1.out.txt p1.ref.txt
 
 g++ p2.cpp -o p2
 ./p2 > p2.out.txt
-diff p2.out.txt p2.ref.txt                                                                                                                                                                                                                                            .txt
+diff p2.out.txt p2.ref.txt
+
+echo "Success"                                                                                                                                                                                                                                            .txt
