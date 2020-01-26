@@ -1,13 +1,13 @@
 #include "D.hpp"
-
 #include <cmath>
 
 int main()
 {
     D c;
-    c.n = 0;
-    c.accumulator = 0;
-    c.name = "S1";
+    int accumulator = c.reset();
+    //c.n = 0;
+    //c.accumulator = 0;
+    //c.name = "S1";
 
     double running=0;
 
@@ -17,11 +17,13 @@ int main()
             c.update(int(sin(ij)*131));
         }
 
+        cout << "S1";
         c.stats();
 
-        int accumulator=c.accumulator;
-        c.n=0;
-        c.accumulator=0;
+        //int accumulator; //=c.accumulator;
+        accumulator = c.reset();
+        //c.n=0;
+        //c.accumulator=0;
         running += accumulator;
 
     }

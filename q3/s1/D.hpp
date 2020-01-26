@@ -7,16 +7,15 @@
 
 using namespace std;
 
-struct D
+class D
 {
 
+private:
+    int n;
+    int accumulator;
+    string name;
+
 public:
-
-  int n;
-  int accumulator;
-  string name;
-
-
   D() {
     this->n;
     this->accumulator;
