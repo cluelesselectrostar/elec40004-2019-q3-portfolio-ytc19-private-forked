@@ -1,5 +1,5 @@
-#ifndef Chan_Dst2_hpp
-#define Chan_Dst2_hpp
+//#ifndef Chan_Dst2_hpp
+//#define Chan_Dst2_hpp
 
 #include "Chan.hpp"
 
@@ -40,4 +40,4 @@ void Chan::f(int c)
     cout << m_y << " " << m_x << endl;
 }
 
-#endif
+//#endif

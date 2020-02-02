@@ -1,4 +1,5 @@
-#include "Chan_Dst2.hpp"
+//#include "Chan_Dst2.hpp"
+#include "Chan.hpp"
 
 int main()
 {

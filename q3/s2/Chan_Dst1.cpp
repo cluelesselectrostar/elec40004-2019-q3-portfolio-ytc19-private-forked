@@ -1,7 +1,8 @@
-#ifndef Chan_Dst1_hpp
-#define Chan_Dst1_hpp
+//#ifndef Chan_Dst1_hpp
+//#define Chan_Dst1_hpp
 
 #include "Chan.hpp"
+
 
 int Chan::get_X() const
 { return m_x; }
@@ -40,4 +41,4 @@ void Chan::f(int d)
     cout << m_f << " " << m_x << endl;
 }
 
-#endif
+//#endif
