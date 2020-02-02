@@ -9,7 +9,7 @@ int main()
     a.set_Y(2.25f);
     a.set_Z("Blah");
 
-    for(int i=0; i<5; i++) 
+    for(int i=0; i<5; i++)
     {
         a.g();
         a.f(4);

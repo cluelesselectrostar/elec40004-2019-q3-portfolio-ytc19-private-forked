@@ -3,13 +3,13 @@
 
 #include "Chan.hpp"
 
-int Chan::get_X()
+int Chan::get_X() const
 { return m_x; }
 
-float Chan::get_Y()
+float Chan::get_Y() const
 { return m_y; }
 
-string Chan::get_Z()
+string Chan::get_Z() const
 { return m_z; }
 
 void Chan::set_X(int x)
