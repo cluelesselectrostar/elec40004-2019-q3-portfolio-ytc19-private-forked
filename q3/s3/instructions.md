@@ -128,7 +128,7 @@ private repo.
 Submission
 ----------
 
-The due date is at the end of the mid-term week: Fri 14th Feb at 22:00.
+Updated as per lecture: the due date due just after the mid-term week: Mon 17th Feb at 22:00.
 
 Submission of the portfolio is via github - the contents of your
 `private` portfolio repository will be pulled, and then the state of the
