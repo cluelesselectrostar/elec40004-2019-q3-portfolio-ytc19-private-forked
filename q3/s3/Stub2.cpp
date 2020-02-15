@@ -1,17 +1,23 @@
-#include "ProxyA_Impl1.hpp"
+#include "ProxyA_factory.hpp"
 
 #include <iostream>
 
-int main()
+int main(int argc, const char **argv)
 {
-    //ProxyA p0;
-    //ProxyA p1;
 
-    ProxyA_Impl1 concrete_proxy0;
-    ProxyA_Impl1 &p0 = concrete_proxy0;
+    string implementation;
 
-    ProxyA_Impl1 concrete_proxy1;
-    ProxyA_Impl1 &p1 = concrete_proxy1;
+    if (argv[1]== NULL) {
+      implementation = "Impl1";
+    } else {
+      implementation = argv[1];
+    }
+
+    ProxyA *concrete_proxy0 = ProxyA_factory(implementation);
+    ProxyA &p0 = *concrete_proxy0;
+
+    ProxyA *concrete_proxy1 = ProxyA_factory(implementation);
+    ProxyA &p1 = *concrete_proxy1;
 
     int x=0;
     for(int i=0; i<10; i++){
@@ -24,4 +30,7 @@ int main()
         p0.ggg();
         cout << x << " " << p0.fff() << " " << p1.fff() << endl;
     }
+
+    delete concrete_proxy0;
+    delete concrete_proxy1;
 }

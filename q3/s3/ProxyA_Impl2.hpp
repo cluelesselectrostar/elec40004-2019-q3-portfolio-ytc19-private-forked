@@ -9,7 +9,7 @@ using namespace std;
 class ProxyA_Impl2
   : public ProxyA
 {
-private:
+protected:
     int m_a;
     float m_b;
 public:
