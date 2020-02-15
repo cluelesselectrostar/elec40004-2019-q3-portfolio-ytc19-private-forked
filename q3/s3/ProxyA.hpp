@@ -8,16 +8,15 @@ using namespace std;
 class ProxyA
 {
 private:
-    int m_a;
-    float m_b;
+    //int m_a;
+    //float m_b;
 public:
-    ProxyA();
+    //ProxyA();
+    virtual ~ProxyA() {}
 
-    float fff() const;
-
-    int ggg();
-
-    void hhh(string g);
+    virtual float fff() const = 0;
+    virtual int ggg() = 0;
+    virtual void hhh(string g) = 0;
 };
 
 #endif
