@@ -15,11 +15,13 @@ float ProxyA_Impl2::fff() const
     return m_b + m_a;
 }
 
+/*
 int ProxyA_Impl2::ggg()
 {
     m_a += m_b;
     return m_a*m_a;
 }
+*/
 
 void ProxyA_Impl2::hhh(string g)
 {

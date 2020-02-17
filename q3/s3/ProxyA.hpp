@@ -7,15 +7,21 @@ using namespace std;
 
 class ProxyA
 {
-private:
-    //int m_a;
-    //float m_b;
+protected:
+    int m_a;
+    float m_b;
 public:
     //ProxyA();
-    virtual ~ProxyA() {}
+    virtual ~ProxyA() {};
 
     virtual float fff() const = 0;
-    virtual int ggg() = 0;
+
+    virtual int ggg()
+    {
+        m_a += m_b;
+        return m_a*m_a;
+    };
+
     virtual void hhh(string g) = 0;
 };
 

@@ -10,15 +10,15 @@ class ProxyA_Impl2
   : public ProxyA
 {
 protected:
-    int m_a;
-    float m_b;
+    //int m_a;
+    //float m_b;
 public:
     ProxyA_Impl2();
-    //~ProxyA_Impl2();
+    ~ProxyA_Impl2(){};
 
     float fff() const;
 
-    int ggg();
+    //int ggg();
 
     void hhh(string g);
 };
